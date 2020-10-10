@@ -132,7 +132,7 @@ def file_options(fname, path):
     o = input()
     if o.lower() == "exit":
         exit()
-    elif o in ['1','2','3','4']:
+    elif o in ['1','2','3','4','7']:
         return int(o)
     elif o == '5':
         global cpy
