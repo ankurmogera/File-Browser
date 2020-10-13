@@ -38,7 +38,7 @@ def display_files(currentPath): # takes path and returns selected dir/file path
     clrscr()
     dirList = os.listdir(currentPath)
     print(f'Directory: {currentPath}')
-    print("-----------------------------------------------------------------------------------------------------------")
+    print("-"*150)
     global cwd
     cwd = currentPath
     print("0. Main Menu")
@@ -49,7 +49,7 @@ def display_files(currentPath): # takes path and returns selected dir/file path
         print(f"{c}. {i}")
         c += 1
         l.append(i)
-    print("-----------------------------------------------------------------------------------------------------------")
+    print("-"*150)
     if cwd2 == "":
         print(f'Options:    (a). Create a Folder  (b). Delete a Folder   (c). Create a File')
     elif cpy == "True":
@@ -84,10 +84,10 @@ def display_files(currentPath): # takes path and returns selected dir/file path
 def readFile(fname):
     clrscr()
     print(f"File: {fname}")
-    print("-----------------------------------------------------------------------------------------------------------")
+    print("-"*150)
     f = open(fname, "r")
     print(f.read())
-    print("-----------------------------------------------------------------------------------------------------------")
+    print("-"*150)
     print("Options: 1. Back to folder")
     o = input()
     if o == str(1):
@@ -100,7 +100,7 @@ def readFile(fname):
 def writeFile(fname):
     clrscr()
     print(f"File: {fname}")
-    print("-----------------------------------------------------------------------------------------------------------")
+    print("-"*150) 
     p = open(fname, "r")
     print(p.read())
     print("---------CAUTION: The file will be overwritten-----------")
@@ -231,7 +231,7 @@ def mainMenu():
         print("Create a directory")
         print("Delete a directory")
         print("Open a program")
-        print("-------------------------------------------------------------------------------------------------------")
+        print("-"*150)
         print("Use numbers to browse.")
         print("Type 'Exit' to exit the program.")
         print("Press enter to continue.")
